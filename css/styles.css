@@ -1,13 +1,41 @@
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Mulish', sans-serif;
+   
+    font-family: 'Mulish', sans-serif; /* Fuente secundaria */
 }
 
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Fuente principal */
 }
 img {
     border-radius: 35px;
 }
+
+.card {
+    width: 350px;
+}
+
+.star {
+    color: #EB5757
+    ;
+}
+
+.super-host{
+    width: 100px;
+    height: fit-content;
+}
+
+
+
+/*FONT'S STYLES*/
+
+h3 {
+  
+ 
+}
+
+.p-cardInfo {
+    font-size: 14px;
+}
+

@@ -26,6 +26,15 @@ img {
     height: fit-content;
 }
 
+.test {
+    width: 100%;
+}
+
+.test img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
 /*.card-img-modified {
     aspect-ratio: 1 / 1;
 }*/

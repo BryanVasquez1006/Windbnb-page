@@ -15,9 +15,10 @@ const newCard = (obj)=> {
 
     div.innerHTML = `
     
-    <div class=" card-img card-img-modified card border border-white  d-flex flex-wrap align-content-center " >
+    <div class=" card-img card-img-modified card border border-white  d-flex flex-wrap align-content-center">
+    <div class="test">
         <img src="${obj.photo}" class="p-1 w-100 h-100" alt="${obj.city}">
-
+    </div>
 
     <div class="card-info d-flex flex-row justify-content-between  ">
       <span class="super-host d-flex flex-column justify-content-center border border-2 rounded-4 border-black ">

@@ -12,7 +12,7 @@ img {
     border-radius: 35px;
 }
 
-.card {
+.card-img {
     width: 350px;
 }
 
@@ -26,14 +26,16 @@ img {
     height: fit-content;
 }
 
+/*.card-img-modified {
+    aspect-ratio: 1 / 1;
+}*/
+
+/*.card-img-modified img {
+    object-fit: cover;
+}*/
 
 
 /*FONT'S STYLES*/
-
-h3 {
-  
- 
-}
 
 .p-cardInfo {
     font-size: 14px;

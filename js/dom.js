@@ -14,8 +14,9 @@ const newCard = (obj)=> {
     //Aqui se insertan los elementos que tiene el card
 
     div.innerHTML = `
-    <div class="card-img row border border-white col-1 d-flex flex-column align-content-center align-item " >
-        <img src="${obj.photo}" class="p-1 w-100" alt="${obj.city}">
+    
+    <div class=" card-img card-img-modified card border border-white  d-flex flex-wrap align-content-center " >
+        <img src="${obj.photo}" class="p-1 w-100 h-100" alt="${obj.city}">
 
 
     <div class="card-info d-flex flex-row justify-content-between  ">

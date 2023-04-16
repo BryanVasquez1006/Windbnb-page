@@ -34,6 +34,40 @@
 </head>
 
 <body class="container">
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <header class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-lg-4 mt-3 gap-5">
     <div class="d-flex align-self-start align-self-md-center">
       <img src="./img/logo.png" alt="">
@@ -42,8 +76,72 @@
     <article class="d-flex rounded-4">
 
       <div class="d-flex rounded-4 border border-success p-2 mb-2 border-opacity-25" class="container">
-        <p class="p-3 m-0 cursor-text">Add location</p>
-        <p class="p-3 m-0 border-start border-end border-light-subtle user-select-none">Add guests</p>
+        
+
+
+        <button class=" border-end bg-transparent p-3 m-0 cursor-text border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Add location</button>
+           <button class=" bg-transparent p-3 m-0 cursor-text border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Add location</button>
+
+           <div class="h-75 offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">Edit your search</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              
+          
+              <div class="searchContainer border-3 border-danger d-flex flex-column ">
+
+                <div class="searchBox1 border border-1 rounded-4 p-2 ">
+                      <h5 class="filterLocation fw-bold">Location</h5>
+                      <p class="">Helsinki, Finland</p>
+                  
+                  
+                  <div class="searchBox2 border-top">
+                    <label for="guests" class="filterGuests fw-bold">Guests</label> <br>
+                    <input type="text" placeholder="Add Guests" class="border-0"></input>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="countryCity-Container mt-5 ms-0 container ">
+                <ul class="d-flex flex-column ps-0">
+
+                  <div class="d-flex m-4 ms-0">
+                    <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon" class="locationImg">
+                       <li class="countryList list-unstyled">Helsinki, Finland</li>
+                  </div>
+                  
+                  <div class="d-flex m-4 ms-0">
+                    <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon" class="locationImg">
+                        <li class="countryList list-unstyled">Turku, Finland</li>
+                  </div>
+
+                  <div class="d-flex m-4 ms-0">
+                    <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon" class="locationImg">
+                       <li class="countryList list-unstyled">Oulu, Finland</li>
+                  </div>
+ 
+                  <div class="d-flex m-4 ms-0">
+                    <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon" class="locationImg">
+                       <li class="countryList list-unstyled">Vaasa, Finland</li>
+                    
+                  </div>
+
+                </ul>
+
+                
+              </div>
+              <div class="searchButton d-flex flex-row justify-content-center">
+              <button type="button" class="btn ">Primary</button>
+              </div>
+            </div>
+            
+
+
+          </div>
         <!-- Icono Search de google Icons -->
         <span class="material-symbols-outlined text-danger p-3 pointer">
           search
@@ -62,7 +160,7 @@
     </div>
 
     <section class="container text-center" >
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex flex-col justify-content-evenly" id="rooms">
+      <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex flex-col justify-content-evenly" id="rooms">
 
         <!-- Aqui van los cards, cada uno debe llevar la clase 'col' -->
         

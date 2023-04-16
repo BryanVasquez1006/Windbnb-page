@@ -5,9 +5,6 @@ html {
 }
 
 
-h1 {
-    font-family: 'Montserrat', sans-serif; /* Fuente principal */
-}
 img {
     border-radius: 35px;
 }
@@ -23,7 +20,8 @@ img {
 
 .super-host{
     width: 100px;
-    height: fit-content;
+    height: 28px;
+    
 }
 
 .test {
@@ -34,6 +32,8 @@ img {
     aspect-ratio: 3/2;
     object-fit: cover;
 }
+
+
 
 /*.card-img-modified {
     aspect-ratio: 1 / 1;
@@ -48,5 +48,35 @@ img {
 
 .p-cardInfo {
     font-size: 14px;
+ 
+}
+h1 {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif; 
+    padding-top: 5px;
 }
 
+p {
+    font-size: 14px;
+}
+
+/*OFF CANVAS STILES*/
+
+.filterLocation {
+font-size: 9px;
+}
+
+.filterGuests {
+    font-size: 9px;
+}
+
+.locationImg {
+    color: #4F4F4F;
+
+    
+}
+
+.btn {
+    color: white;
+    background-color: #EB5757;
+}

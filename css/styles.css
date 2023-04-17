@@ -1,8 +1,5 @@
 
-html {
-   
-    font-family: 'Mulish', sans-serif; /* Fuente secundaria */
-}
+
 
 
 img {
@@ -33,15 +30,25 @@ img {
     object-fit: cover;
 }
 
+.superHostHide {
+    display: none;
+}
 
+input {
+    font-family: 'Mulish', sans-serif;
+}
 
-/*.card-img-modified {
-    aspect-ratio: 1 / 1;
-}*/
+label {
+    font-family: 'Montserrat', sans-serif; 
+}
 
-/*.card-img-modified img {
-    object-fit: cover;
-}*/
+.offcanvas{
+    height: 80%;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Montserrat', sans-serif; 
+}
 
 
 /*FONT'S STYLES*/

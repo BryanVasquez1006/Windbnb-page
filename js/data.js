@@ -20,13 +20,13 @@ const getData = async () => {
   return data;
 
 }
-
-
-
 const getCategories = (data) => {
   const categories = data.map(elem => `${elem.city}, ${elem.country}`)
   console.log(categories);
 }
+
+
+
 
 
 

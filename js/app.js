@@ -3,11 +3,18 @@ import dom from "./dom.js";
 
 const URL = "./stays.json";
 const rooms = dom.$("#rooms");
+const staysIn = dom.$("#staysIn")
+console.log(staysIn)
+
+
+console.log(data)
 const datos = await data.getData(URL);
 
-console.log(rooms)
+
 
 const categories =  data.getCategories(datos);
+
+
 
 
 datos.forEach(element => {

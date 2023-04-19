@@ -4,11 +4,6 @@ con la manipulación de los datos de la aplicacion
 */
 
 
-
-
-
-
-
 //AQUI SE OBTIENEN LOS DATOS DE LA API LOCAL JSON
 const getData = async () => {
   // Obytener los datos del archivo 'stays.json'
@@ -25,12 +20,6 @@ const getData = async () => {
     const noRepeatedCategories = new Set(categories)
     console.log(noRepeatedCategories);
   }
-
-
-
-
-
-
 
 
 export default {

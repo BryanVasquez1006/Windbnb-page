@@ -55,34 +55,50 @@
           type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
           search
         </span>
-        <div class="h-auto offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="h-100  offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasTopLabel">Edit your search</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+
+
           <div class="offcanvas-body overflow-hidden">
 
 
-            <div class="searchContainer border-3 border-danger d-flex flex-column "> 
+            <div class="container searchContainer border-3 border-danger d-flex flex-column "> 
               
-              <div class="searchBox1 border border-1 rounded-4 p-2 ">
-              <form>
+
+                <div class="container searchingContainer">
+                  <div class="row searchingRow">
+
+                    
+                    
+                    <div class="container-sm container-xxl searchBox1 border border-1 rounded-4 p-2 col-sm-4">
+                      <form>
+                        <!-- Aqui van los inputs pra el filtro de los guests y location -->
+                        <div class="mb-0 p-0">
+                          <label for="exampleInputLocation" class="form-label fw-bold">Location</label>
+                          <input type="text" class="form-control border-0 bg-transparent p-0" id="exampleInputLocation"  placeholder="Add location">
+                        </div>    
+                      </div>
+                      <div class="container-xxl col-sm-4 searchBox2 border border-1 rounded-4 p-2 "> 
+                        <form>
+                          <div class="mb-0 p-0">
+                            <label for="exampleInputPassword1" class="form-label fw-bold">Guests</label>
+                            <input type="input" class="form-control border-0 p-0" id="exampleInputInput" placeholder="Add guests">
+                          </div>
+                        </div>
+                        <div class="searchButton d-flex flex-row justify-content-center container-sm container-xxl searchBox1 border border-1 rounded-4 p-2 col-sm-4 p-0 m-0">
+
+                          
+                          <button class="offcanvasButton btn mb-4  hover">Search</button>
+                        </div>
+                        </div>
+                      </div>    
 
 
-                <!-- Aqui van los inputs pra el filtro de los guests y location -->
-                      <div class="mb-3">
-                        <label for="exampleInputLocation" class="form-label fw-bold">Location</label>
-                        <input type="text" class="form-control border-0 bg-transparent " id="exampleInputLocation"  placeholder="Add location">
-                        <div class="searchBox2 border-top"></div>
-                      </div>
-                      <div class="mb-0">
-                        <label for="exampleInputPassword1" class="form-label fw-bold">Guests</label>
-                        <input type="input" class="form-control border-0" id="exampleInputInput" placeholder="Add guests">
-                      </div>
-                    </div>    
-                      
-                      
-                      <div class="countryCity-Container mt-5 ms-0 container ">
+
+                      <div class=" countryCity-Container mt-5 ms-0">
                         <ul class="d-flex flex-column ps-0 text-nowrap m-0">
                           
                           <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0 ">
@@ -110,9 +126,7 @@
                             </button>
                           </ul>
                         </div>
-                        <div class="searchButton d-flex flex-row justify-content-center">
-                          <button class="btn mb-4">Search</button>
-                        </div>
+                      
                       </div>
                       
                     

@@ -51,6 +51,8 @@ const newCard = (obj)=> {
 
 
 
+
+
 export default {
     newCard,
     $

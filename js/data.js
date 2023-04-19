@@ -17,13 +17,14 @@ const getData = async () => {
     .then(response => response.json())
     .then( json => json)
     
-  return data;
-
-}
-const getCategories = (data) => {
-  const categories = data.map(elem => `${elem.city}, ${elem.country}`)
-  console.log(categories);
-}
+    return data;
+    
+  }
+  const getCategories = (data) => {
+    const categories = data.map(elem => `${elem.city}, ${elem.country}`)
+    const noRepeatedCategories = new Set(categories)
+    console.log(noRepeatedCategories);
+  }
 
 
 

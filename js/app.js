@@ -17,6 +17,7 @@ const categories =  data.getCategories(datos);
 
 
 
+
 datos.forEach(element => {
     //Se crea el card con la informacion del elemento
     const card = dom.newCard(element);

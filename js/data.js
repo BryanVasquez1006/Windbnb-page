@@ -18,7 +18,7 @@ const getData = async () => {
   const getCategories = (data) => {
     const categories = data.map(elem => `${elem.city}, ${elem.country}`)
     const noRepeatedCategories = new Set(categories)
-    console.log(noRepeatedCategories);
+    
   }
 
 

@@ -4,10 +4,11 @@
 
 img {
     border-radius: 35px;
+    
 }
 
 .card-img {
-    width: 350px;
+    width: 360px;
 }
 
 .star {
@@ -15,11 +16,14 @@ img {
     ;
 }
 
-.super-host{
+.superHost{
     width: 100px;
     height: 28px;
+    border: solid 2px black;       
     
 }
+
+
 
 .test {
     width: 100%;

@@ -48,8 +48,10 @@
 
         <button class=" border-end bg-transparent p-3 m-0 cursor-text border-0 " type="button"
           data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Add location</button>
+
         <button class=" bg-transparent p-3 m-0 cursor-text border-0 " type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Add guests</button>
+
         <span
           class="material-symbols-outlined text-danger p-3 pointer border-start bg-transparent p-3 m-0 cursor-text border-0"
           type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
@@ -74,32 +76,32 @@
                     
                     
                     <div class="container-sm container-xxl searchBox1 border border-1 rounded-4 p-2 col-sm-4">
-                      <form>
+                      <form id="form">
                         <!-- Aqui van los inputs pra el filtro de los guests y location -->
                         <div class="mb-0 p-0">
                           <label for="exampleInputLocation" class="form-label fw-bold">Location</label>
-                          <input type="text" class="form-control border-0 bg-transparent p-0" id="exampleInputLocation"  placeholder="Add location">
+                          <input type="text" class="form-control border-0 bg-transparent p-0" id="locationInformation"  placeholder="Add location">
                         </div>    
                       </div>
                       <div class="container-xxl col-sm-4 searchBox2 border border-1 rounded-4 p-2 "> 
                         <form>
                           <div class="mb-0 p-0">
                             <label for="exampleInputPassword1" class="form-label fw-bold">Guests</label>
-                            <input type="input" class="form-control border-0 p-0" id="exampleInputInput" placeholder="Add guests">
+                            <input type="input" class="form-control border-0 p-0" id="guestsInformation" placeholder="Add guests">
                           </div>
                         </div>
                         <div class="searchButton d-flex flex-row justify-content-center container-sm container-xxl searchBox1 border border-1 rounded-4 p-2 col-sm-4 p-0 m-0">
 
                           
-                          <button class="offcanvasButton btn mb-4  hover">Search</button>
+                          <button class="offcanvasButton btn mb-4  hover" type ="button" id="buscar">Search</button>
                         </div>
                         </div>
                       </div>    
 
 
 
-                      <div class=" countryCity-Container mt-5 ms-0">
-                        <ul class="d-flex flex-column ps-0 text-nowrap m-0">
+                      <div class=" row countryCity-Container mt-5 ms-0 ">
+                        <ul class="col col-md-6 d-flex flex-column ps-0 text-nowrap m-0 d-block" id="locationNames">
                           
                           <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0 ">
                             <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon"
@@ -116,7 +118,7 @@
                           <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0">
                             <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon"
                             class="locationImg">
-                            <li class="countryList list-unstyled">Oulu, Finland</li>
+                            <li class="countryList list-unstyled ">Oulu, Finland</li>
                           </button>
                           
                             <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0">
@@ -125,11 +127,38 @@
                               <li class="countryList list-unstyled">Vaasa, Finland</li>
                             </button>
                           </ul>
+                          <ul class="col col-sm-3 just" id="options"> 
+                          <div>
+                            <p>Adults</p>
+                            <p>Ages 13 or above</p>
+
+                            <div class="d-flex flex-row ">
+                              <button class="btn ps-3 ms-2" type="button" id="restarBtn">-</button>
+                              <span class="ms-2 me-2 text-center pt-1 " id="counter"> 0</span>
+                              <button class="btn" type="button" id ="sumarBtn">+</button>
+
+                            </div>
+                          </div>
+
+                          </ul>
+                          <ul class="col col-sm-3" id="options"> 
+                            <div>
+                              <p>Children</p>
+                              <p>Ages 2-12</p>
+
+                              <div class="d-flex flex-row ">
+                                <button class="btn ps-3 ms-2" type="button" id="restarChildren">-</button>
+                                <span class="ms-2 me-2 text-center pt-1 " id="counterChildren"> 0</span>
+                                <button class="btn" type="button" id ="sumarChildren">+</button>
+  
+                              </div>
+                            </div>
+  
+                            </ul>
                         </div>
                       
                       </div>
-                      
-                    
+           
               </form>
               
           </div>
@@ -148,7 +177,7 @@
     </div>
 
     <section class="container text-center">
-      <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex flex-col justify-content-evenly" id="rooms">
+      <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex flex-col gap-5" id="rooms">
 
         <!-- Aqui van los cards, cada uno debe llevar la clase 'col' -->
 

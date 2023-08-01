@@ -55,6 +55,7 @@ function showcards(stays) {
         console.log(card);
       });
   }
+  showcards(datos)
 
 
 

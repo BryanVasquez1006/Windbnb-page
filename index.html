@@ -70,7 +70,7 @@
             <div class="container searchContainer border-3 border-danger d-flex flex-column "> 
               
 
-                <div class="container searchingContainer">
+                <div class="container searchingContainer ">
                   <div class="row searchingRow">
 
                     
@@ -83,6 +83,8 @@
                           <input type="text" class="form-control border-0 bg-transparent p-0" id="locationInformation"  placeholder="Add location">
                         </div>    
                       </div>
+
+
                       <div class="container-xxl col-sm-4 searchBox2 border border-1 rounded-4 p-2 "> 
                         <form>
                           <div class="mb-0 p-0">
@@ -90,10 +92,10 @@
                             <input type="input" class="form-control border-0 p-0" id="guestsInformation" placeholder="Add guests">
                           </div>
                         </div>
-                        <div class="searchButton d-flex flex-row justify-content-center container-sm container-xxl searchBox1 border border-1 rounded-4 p-2 col-sm-4 p-0 m-0">
 
-                          
-                          <button class="offcanvasButton btn mb-4  hover" type ="button" id="buscar">Search</button>
+
+                        <div class="searchButton d-flex flex-row justify-content-center container-sm container-xxl searchBox1 border border-1 rounded-4 p-2 col-sm-4 p-0 m-0">
+                          <button class="offcanvasButton btn mb-4 text-center  hover" type ="button" id="buscar"  data-bs-dismiss="offcanvas" ">Search</button>
                         </div>
                         </div>
                       </div>    
@@ -101,39 +103,43 @@
 
 
                       <div class=" row countryCity-Container mt-5 ms-0 ">
-                        <ul class="col col-md-6 d-flex flex-column ps-0 text-nowrap m-0 d-block" id="locationNames">
+                        <ul class="col col-md-6 d-flex flex-column ps-0 text-nowrap m-0 d-none d-sm-block d-md-block d-lg-none" id="locationNames">
                           
-                          <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0 ">
+                          <button  class="locationBTN d-flex m-4 ms-0 bg-transparent w-25 border-0" data-city ="Helsinki">
                             <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon"
                             class="locationImg ">
                             <li class="countryList list-unstyled">Helsinki, Finland</li>
                           </button>
                               
-                          <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0">
+                          <button  class="locationBTN d-flex m-4 ms-0 bg-transparent w-25 border-0" data-city ="Turku">
                             <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon"
                             class="locationImg">
                             <li class="countryList list-unstyled">Turku, Finland</li>
                           </button>
                           
-                          <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0">
+                          <button type="button"  class="locationBTN d-flex m-4 ms-0 bg-transparent w-25 border-0" data-city ="Oulu">
                             <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon"
                             class="locationImg">
                             <li class="countryList list-unstyled ">Oulu, Finland</li>
                           </button>
                           
-                            <button class="d-flex m-4 ms-0 bg-transparent w-25 border-0">
+                            <button  class="locationBTN d-flex m-4 ms-0 bg-transparent w-25 border-0" data-city ="Vaasa">
                               <img src="./img/location_on_FILL1_wght300_GRAD0_opsz40.png" alt="LocationIcon"
                               class="locationImg">
                               <li class="countryList list-unstyled">Vaasa, Finland</li>
                             </button>
+
+                            <button  class=" d-flex m-4 ms-0 bg-transparent w-25 border-0">
+                              <li class="countryList list-unstyled">Show all rooms</li>
+                            </button>
                           </ul>
-                          <ul class="col col-sm-3 just" id="options"> 
+                          <ul class="col col-sm-3" id="options"> 
                           <div>
                             <p>Adults</p>
                             <p>Ages 13 or above</p>
 
                             <div class="d-flex flex-row ">
-                              <button class="btn ps-3 ms-2" type="button" id="restarBtn">-</button>
+                              <button class="btn ps-3 ms-2 border-0" type="button" id="restarBtn"> - </button>
                               <span class="ms-2 me-2 text-center pt-1 " id="counter"> 0</span>
                               <button class="btn" type="button" id ="sumarBtn">+</button>
 
@@ -186,7 +192,7 @@
   </main>
 </body>
 
-</html>
 
 
 <div class="align-content-center"></div>
+
